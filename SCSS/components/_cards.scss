@@ -1,0 +1,40 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $gap;
+
+    .card {
+        background: $background-color;
+        border-radius: 5px;
+        padding: $padding;
+        @include box-shadow();
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin: $gap 0;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: $gap;
+        }
+
+        button {
+            background: $primary-color;
+            color: $text-color;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: $secondary-color;
+            }
+        }
+    }
+}

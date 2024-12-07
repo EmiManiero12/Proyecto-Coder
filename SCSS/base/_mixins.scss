@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == tablet {
+        @media (max-width: #{$breakpoint-tablet}) { @content; }
+    } @else if $breakpoint == mobile {
+        @media (max-width: #{$breakpoint-mobile}) { @content; }
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-shadow($x: 0px, $y: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: $x $y $blur $color;
+}

@@ -1,0 +1,286 @@
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial, sans-serif";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  background: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 50px;
+  height: 50px;
+}
+header .logo span {
+  margin-left: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+header nav ul {
+  display: flex;
+  gap: 15px;
+}
+header nav ul li a {
+  color: #ffffff;
+  padding: 10px;
+}
+header nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background: #555;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+footer .social-icons {
+  margin: 15px 0;
+}
+footer .social-icons a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+footer .social-icons a:hover {
+  color: #333;
+}
+footer p {
+  font-size: 0.9em;
+}
+
+.cards, .home .ofertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.cards .card, .cards .products .product-list .product-card, .cards .pscards .product-list .product-card, .cards .ps4 .product-list .product-card, .products .product-list .cards .product-card, .pscards .product-list .cards .product-card, .ps4 .product-list .cards .product-card, .home .ofertas .card, .home .ofertas .products .product-list .product-card, .home .ofertas .pscards .product-list .product-card, .home .ofertas .ps4 .product-list .product-card, .products .product-list .home .ofertas .product-card, .pscards .product-list .home .ofertas .product-card, .ps4 .product-list .home .ofertas .product-card {
+  background: #f4f4f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.cards .card img, .cards .products .product-list .product-card img, .cards .pscards .product-list .product-card img, .cards .ps4 .product-list .product-card img, .products .product-list .cards .product-card img, .pscards .product-list .cards .product-card img, .ps4 .product-list .cards .product-card img, .home .ofertas .card img, .home .ofertas .products .product-list .product-card img, .home .ofertas .pscards .product-list .product-card img, .home .ofertas .ps4 .product-list .product-card img, .products .product-list .home .ofertas .product-card img, .pscards .product-list .home .ofertas .product-card img, .ps4 .product-list .home .ofertas .product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.cards .card h3, .cards .products .product-list .product-card h3, .cards .pscards .product-list .product-card h3, .cards .ps4 .product-list .product-card h3, .products .product-list .cards .product-card h3, .pscards .product-list .cards .product-card h3, .ps4 .product-list .cards .product-card h3, .home .ofertas .card h3, .home .ofertas .products .product-list .product-card h3, .home .ofertas .pscards .product-list .product-card h3, .home .ofertas .ps4 .product-list .product-card h3, .products .product-list .home .ofertas .product-card h3, .pscards .product-list .home .ofertas .product-card h3, .ps4 .product-list .home .ofertas .product-card h3 {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+.cards .card p, .cards .products .product-list .product-card p, .cards .pscards .product-list .product-card p, .cards .ps4 .product-list .product-card p, .products .product-list .cards .product-card p, .pscards .product-list .cards .product-card p, .ps4 .product-list .cards .product-card p, .home .ofertas .card p, .home .ofertas .products .product-list .product-card p, .home .ofertas .pscards .product-list .product-card p, .home .ofertas .ps4 .product-list .product-card p, .products .product-list .home .ofertas .product-card p, .pscards .product-list .home .ofertas .product-card p, .ps4 .product-list .home .ofertas .product-card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+.cards .card button, .cards .products .product-list .product-card button, .cards .pscards .product-list .product-card button, .cards .ps4 .product-list .product-card button, .products .product-list .cards .product-card button, .pscards .product-list .cards .product-card button, .ps4 .product-list .cards .product-card button, .home .ofertas .card button, .home .ofertas .products .product-list .product-card button, .home .ofertas .pscards .product-list .product-card button, .home .ofertas .ps4 .product-list .product-card button, .products .product-list .home .ofertas .product-card button, .pscards .product-list .home .ofertas .product-card button, .ps4 .product-list .home .ofertas .product-card button {
+  background: #333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cards .card button:hover, .cards .products .product-list .product-card button:hover, .cards .pscards .product-list .product-card button:hover, .cards .ps4 .product-list .product-card button:hover, .products .product-list .cards .product-card button:hover, .pscards .product-list .cards .product-card button:hover, .ps4 .product-list .cards .product-card button:hover, .home .ofertas .card button:hover, .home .ofertas .products .product-list .product-card button:hover, .home .ofertas .pscards .product-list .product-card button:hover, .home .ofertas .ps4 .product-list .product-card button:hover, .products .product-list .home .ofertas .product-card button:hover, .pscards .product-list .home .ofertas .product-card button:hover, .ps4 .product-list .home .ofertas .product-card button:hover {
+  background: #555;
+}
+
+.home .hero {
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 80px 20px;
+}
+.home .hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .home .hero h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 480px) {
+  .home .hero h1 {
+    font-size: 1.8em;
+  }
+}
+.home .hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .home .hero p {
+    font-size: 1em;
+  }
+}
+.home .hero a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.home .hero a:hover {
+  background: #555;
+}
+.home .ofertas h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .home .ofertas h2 {
+    font-size: 1.5em;
+  }
+}
+
+.contact {
+  padding: 20px;
+}
+.contact h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 1.5em;
+  }
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact form label {
+  font-size: 1.1em;
+}
+.contact form input, .contact form textarea {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+.contact form button {
+  background: #333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.contact form button:hover {
+  background: #555;
+}
+
+.products, .pscards, .ps4 {
+  padding: 20px;
+}
+.products h2, .pscards h2, .ps4 h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .products h2, .pscards h2, .ps4 h2 {
+    font-size: 1.5em;
+  }
+}
+.products .product-list, .pscards .product-list, .ps4 .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.products .product-list .product-card img, .pscards .product-list .product-card img, .ps4 .product-list .product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.products .product-list .product-card h3, .pscards .product-list .product-card h3, .ps4 .product-list .product-card h3 {
+  margin-top: 7.5px;
+  font-size: 1.2em;
+}
+
+.ps4 .game-card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+.ps4 .game-card h3 {
+  font-size: 1.1em;
+}
+
+.pscards h2 {
+  font-size: 1.8em;
+}
+.pscards .card, .products .product-list .pscards .product-card, .ps4 .product-list .pscards .product-card, .pscards .product-list .product-card {
+  padding: 20px;
+}
+.pscards .card img, .products .product-list .pscards .product-card img, .ps4 .product-list .pscards .product-card img, .pscards .product-list .product-card img {
+  max-height: 150px;
+}
+.pscards .card button, .products .product-list .pscards .product-card button, .ps4 .product-list .pscards .product-card button, .pscards .product-list .product-card button {
+  padding: 10px 20px;
+  background: #333;
+  color: #ffffff;
+  border: none;
+}
+.pscards .card button:hover, .products .product-list .pscards .product-card button:hover, .ps4 .product-list .pscards .product-card button:hover, .pscards .product-list .product-card button:hover {
+  background: #555;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.button.primary {
+  background: #333;
+  color: #ffffff;
+}
+.button.primary:hover {
+  background: #555;
+}
+.button.secondary {
+  background: #555;
+  color: #ffffff;
+}
+.button.secondary:hover {
+  background: #333;
+}
+
+/*# sourceMappingURL=styles.css.map */

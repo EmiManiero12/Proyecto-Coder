@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Tu Tienda de Videojuegos</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-dyB72+1zO2vjl3qH2OYsLz6+WPLfehEZ4kMljPPA5HgLP6XJYI2HNu4yJXGZDBv9"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/Logo.png" alt="Logo de DragonStore">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/juegosPS4.html">Juegos PS4</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/tarjetas.html">Tarjetas</a></li>
+            </ul>
+        </nav>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar videojuegos...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bienvenido a DragonStore</h1>
+            <p>Encuentra los mejores videojuegos a precios increíbles.</p>
+            <a href="./pages/productos.html" class="btn-hero">Explorar Productos</a>
+        </section>
+
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto">
+                    <img src="./img/juego-fc25.jpg" alt="Juego 1">
+                    <h3>Juego 1</h3>
+                    <p>$59.99</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="./img/juego-miles-morales.jpg" alt="Juego 2">
+                    <h3>Juego 2</h3>
+                    <p>$49.99</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="producto">
+                    <img src="./img/juego-horizon.webp" alt="Juego 3">
+                    <h3>Juego 3</h3>
+                    <p>$39.99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas Especiales</h2>
+            <div class="ofertas-grid">
+                <div class="oferta">
+                    <img src="./img/silent-hill-2-ps5.jpg" alt="Oferta 1">
+                    <h3>Pack Aventura</h3>
+                    <p><del>$79.99</del> $59.99</p>
+                </div>
+                <div class="oferta">
+                    <img src="./img/cyberpunk-2077PS4.jpg" alt="Oferta 2">
+                    <h3>Pack Acción</h3>
+                    <p><del>$89.99</del> $69.99</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <ul class="social-icon">
+                <li class="icon-element">
+                    <a href="" class="icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="icon-element">
+                    <a href="" class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="icon-element">
+                    <a href="" class="icon">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li class="menu-elemento">
+                    <a href="" class="menu-icon">Inicio</a>
+                </li>
+                <li class="menu-elemento">
+                    <a href="" class="menu-icon">Sobre Nosotros</a>
+                </li>
+                <li class="menu-elemento">
+                    <a href="" class="menu-icon">Contacto</a>
+                </li>
+            </ul>
+            <p>© 2024 GameStore. Todos los derechos reservados.</p>
+            <p>Contacto: info@gamestore.com | Teléfono: +123 456 789</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>     
+</body>
+</html>

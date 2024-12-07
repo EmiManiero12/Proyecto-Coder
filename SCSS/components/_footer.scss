@@ -1,0 +1,24 @@
+footer {
+    background: $secondary-color;
+    color: $text-color;
+    padding: $padding;
+    text-align: center;
+
+    .social-icons {
+        margin: $gap 0;
+
+        a {
+            margin: 0 10px;
+            color: $text-color;
+            font-size: 1.5em;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
