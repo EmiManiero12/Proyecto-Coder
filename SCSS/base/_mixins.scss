@@ -1,17 +1,72 @@
-@mixin respond($breakpoint) {
-    @if $breakpoint == tablet {
-        @media (max-width: #{$breakpoint-tablet}) { @content; }
-    } @else if $breakpoint == mobile {
-        @media (max-width: #{$breakpoint-mobile}) { @content; }
+/* Responsiveness */
+
+/* Tablets (768px o menos) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .grid {
+        gap: 15px;
     }
 }
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Móviles (480px o menos) */
+@media (max-width: 480px) {
+    header {
+        align-items: center;
+    }
 
-@mixin box-shadow($x: 0px, $y: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.1)) {
-    box-shadow: $x $y $blur $color;
+    header .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header nav ul {
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+
+    .card button {
+        font-size: 0.9em;
+    }
 }
