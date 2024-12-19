@@ -1,18 +1,22 @@
-/*JUEGOS PS4*/
-
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Bruno Ace SC", sans-serif;
+}
+
+.juegos .juegos-grid .juego h2 {
+    color: #000000;
 }
 
 .juegos p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.1em;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .juegos-grid {
@@ -24,7 +28,7 @@ h1 {
 }
 
 .juego {
-    background: #fff;
+    background: rgb(239, 238, 238);
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -41,6 +45,7 @@ h1 {
 .juego h2 {
     font-size: 1.2em;
     margin: 15px 0 10px;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .juego .precio {
@@ -52,7 +57,7 @@ h1 {
 
 .juego button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #6f00ff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -62,7 +67,7 @@ h1 {
 }
 
 .juego button:hover {
-    background-color: #555;
+    background-color:#00ffff
 }
 
 .juego:hover {

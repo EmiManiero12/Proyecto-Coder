@@ -1,48 +1,70 @@
-/* CONTACTO */
-
-main {
-    padding: 20px;
+.ubicacion-mapa {
+    padding: 0px;
+    background: url("../img/cyberpunk-2077-formulario.jpg") center/cover no-repeat; /* Ruta a tu imagen */
 }
 
 h1, h2 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: "Bruno Ace SC", sans-serif;
+    color: #00ffff;
+}
+
+p {
+    color: #00ffff;
+}
+
+main .ubicacion h2 {
+    color: #00ffff;
+    background-color: #ffffff00;
+}
+
+main .ubicacion p {
+    color: #00ffff;
 }
 
 .contacto p, .ubicacion p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.1em;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .formulario-container {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: #000000;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.formulario-container label {
+    color: #6f00ff;
+    font-family: "Bruno Ace SC", sans-serif;
+}
+
 form label {
     display: block;
     margin: 10px 0 5px;
+    color: #000000;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 1em;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 form button {
     width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #6f00ff;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -50,7 +72,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #00ffff;
 }
 
 .ubicacion .mapa {

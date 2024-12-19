@@ -1,21 +1,50 @@
-/* TARJETAS */
-
-main {
-    padding: 20px;
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.productos-grid .producto button {
+    background-color: #6f00ff;
+    color: white;
 }
 
-.tarjetas p {
+.productos-grid .producto button:hover { 
+    background-color: #00ffff;
+}
+
+.productos-grid .producto h3 {
+    background-color: #00ffff;
+    color: black;
+    font-family:"Bruno Ace SC", sans-serif;
+}
+
+
+.productos-grid .producto {
+    background-color: rgb(239, 238, 238);
+} 
+
+.productos-grid .producto .precio {
+    color: #000000;
+}
+
+.productos .productos-grid .producto h2 {
+    color: #000000;
+}
+
+
+.juegos .juegos-grid .juego h2 {
+    color: #000000;
+}
+
+.juegos p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.1em;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
-.tarjetas-grid {
+.juegos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -23,49 +52,11 @@ h1 {
     margin: 0 auto;
 }
 
-.tarjeta {
-    background: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.tarjeta img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.tarjeta h2 {
-    font-size: 1.2em;
-    margin: 15px 0 10px;
-}
-
-.tarjeta .precio {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.tarjeta button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.tarjeta button:hover {
-    background-color: #555;
-}
-
-.tarjeta:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }

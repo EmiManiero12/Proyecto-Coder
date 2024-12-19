@@ -1,5 +1,3 @@
-/* TARJETAS */
-
 main {
     padding: 20px;
 }
@@ -7,12 +5,14 @@ main {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family:"Bruno Ace SC", sans-serif;
 }
 
 .tarjetas p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.1em;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .tarjetas-grid {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .tarjeta {
-    background: #fff;
+    background: rgb(239, 238, 238);
     padding: 20px;
     text-align: center;
     border-radius: 5px;
@@ -52,8 +52,8 @@ h1 {
 
 .tarjeta button {
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #6f00ff;
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -62,10 +62,14 @@ h1 {
 }
 
 .tarjeta button:hover {
-    background-color: #555;
+    background-color: #00ffff;
 }
 
 .tarjeta:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas .tarjetas-grid .tarjeta h2 {
+    color: #000000;
 }

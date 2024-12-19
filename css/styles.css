@@ -1,9 +1,10 @@
 @charset "UTF-8";
-/* Responsiveness */
-/* Tablets (768px o menos) */
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Outfit:wght@100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@media (max-width: 1013px) {
+
+/* Responsiveness */
+/* Tablets (768px o menos) */
+@media (max-width: 686px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -18,7 +19,7 @@
     margin: 5px 0;
   }
   .hero h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
   .hero p {
     font-size: 1em;
@@ -32,7 +33,7 @@
 }
 
 /* Móviles (480px o menos) */
-@media (max-width: 415px) {
+@media (max-width: 463px) {
   header {
     align-items: center;
   }
@@ -58,224 +59,6 @@
   .card button {
     font-size: 0.9em;
   }
-}
-
-/* TARJETAS */
-main {
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.tarjetas p {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.1em;
-}
-
-.tarjetas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.tarjeta {
-  background: #cb3232;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tarjeta img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.tarjeta h2 {
-  font-size: 1.2em;
-  margin: 15px 0 10px;
-}
-
-.tarjeta .precio {
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.tarjeta button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.tarjeta button:hover {
-  background-color: #555;
-}
-
-.tarjeta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/*FOOTER*/
-.footer {
-  position: relative;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-size: cover;
-}
-
-.footer p {
-  color: rgb(0, 238, 255);
-}
-
-.social-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 10px 5px;
-  flex-wrap: wrap;
-}
-
-.icon-element {
-  list-style: none;
-}
-
-.icon {
-  color: rgb(0, 238, 255);
-  font-size: 32px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-.icon:hover {
-  transform: translateY(-10px);
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
-}
-
-.menu-element {
-  list-style: none;
-}
-
-.menu-icon {
-  color: rgb(0, 238, 255);
-  font-size: 20px;
-  display: inline-block;
-  text-decoration: none;
-  margin: 5px 10px;
-  opacity: 0.5;
-  transition: 0.3s;
-  list-style: none;
-}
-
-.menu-icon:hover {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-header {
-  background-color: #080a8a;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  flex-wrap: wrap;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header img {
-  width: 40px; /* Ajusta el tamaño del logo */
-  height: 40px;
-  margin-right: 10px; /* Espacio entre el logo y el texto */
-  border-radius: 5px; /* Opcional: esquinas redondeadas */
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li {
-  margin: 0 10px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-header .busqueda {
-  display: flex;
-  margin-top: 10px;
-}
-
-header .busqueda input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  width: 200px;
-}
-
-header .busqueda button {
-  background-color: #555;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-header .busqueda button:hover {
-  background-color: #777;
 }
 
 * {
@@ -770,4 +553,83 @@ h1 {
   color: #000000;
 }
 
+/*FOOTER*/
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.footer p {
+  color: rgb(0, 238, 255);
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 5px;
+  flex-wrap: wrap;
+}
+
+.icon-element {
+  list-style: none;
+}
+
+.icon {
+  color: rgb(0, 238, 255);
+  font-size: 32px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu-element {
+  list-style: none;
+}
+
+.menu-icon {
+  color: rgb(0, 238, 255);
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 10px;
+  opacity: 0.5;
+  transition: 0.3s;
+  list-style: none;
+}
+
+.menu-icon:hover {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

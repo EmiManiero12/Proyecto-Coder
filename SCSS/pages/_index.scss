@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-size: cover;
+    margin: 0;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
 }
 
 header {
-    background-color: #080a8a;
+    background-color: #000000;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -27,12 +26,11 @@ header .logo {
 }
 
 header img {
-    width: 40px; /* Ajusta el tamaño del logo */
-    height: 40px;
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: 80px;
     margin-right: 10px; /* Espacio entre el logo y el texto */
     border-radius: 5px; /* Opcional: esquinas redondeadas */
 }
-
 
 header nav ul {
     list-style: none;
@@ -46,7 +44,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #00f2ff;
     text-decoration: none;
     font-size: 1em;
 }
@@ -62,13 +60,13 @@ header .busqueda {
 
 header .busqueda input {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #00ffff;
     border-radius: 5px 0 0 5px;
     width: 200px;
 }
 
 header .busqueda button {
-    background-color: #555;
+    background-color: #00ffff;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -80,11 +78,11 @@ header .busqueda button:hover {
     background-color: #777;
 }
 
-.hero {
-    background: url('../img/cyberpunk-2077-formulario.jpg') center/cover no-repeat; /* Ruta a tu imagen */
-    height: 400px;
+.main .hero .hero-section {
+    background: url("../img/cyberpunk-2077-formulario.jpg") center/cover no-repeat; /* Ruta a tu imagen */
+    height: 600px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,17 +94,22 @@ header .busqueda button:hover {
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin: 0;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    color: #6f00ff;
 }
 
 .hero p {
     font-size: 1.2em;
+    font-family: "Bruno Ace SC", sans-serif;
+    color: white;
 }
 
 .hero .btn-hero {
-    background-color: #fff;
-    color: #333;
+    background-color: #6f00ff;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -115,28 +118,54 @@ header .busqueda button:hover {
 }
 
 .hero .btn-hero:hover {
-    background-color: #f0f0f0;
-}
-
-main {
-    padding: 20px;
+    background-color: #00ffff;
 }
 
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 70px;
+    background-color: #00ffff;
+    font-family: sans-serif;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
-.productos-incio, .ofertas-grid {
+.productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-.producto, .oferta {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    background-color: #f9f9f9;
+.productos-grid .producto button {
+    background-color: #6f00ff;
+    color: white;
+}
+
+
+.productos-grid .producto button:hover { 
+    background-color: #00ffff;
+}
+
+.productos-grid .producto h3 {
+    background-color: #00ffff;
+    color: black;
+    font-family:"Bruno Ace SC", sans-serif;
+}
+
+.productos-grid .producto {
+    background-color: rgb(239, 238, 238);
+}
+
+.productos-grid .producto .precio {
+    color: #000000;
+}
+
+.productos .productos-grid .producto h2 {
+    color: #000000;
+}
+
+/*OFERTAS*/
+
+.ofertas {
+    font-size: 50px;
+    background-color: #00ffff;
+    font-family: "Bruno Ace SC", sans-serif;
 }

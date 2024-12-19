@@ -1,5 +1,5 @@
 header {
-    background-color: #080a8a;
+    background-color: #000000;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -14,12 +14,11 @@ header .logo {
 }
 
 header img {
-    width: 40px; /* Ajusta el tamaño del logo */
-    height: 40px;
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: 80px;
     margin-right: 10px; /* Espacio entre el logo y el texto */
     border-radius: 5px; /* Opcional: esquinas redondeadas */
 }
-
 
 header nav ul {
     list-style: none;
@@ -33,7 +32,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #00f2ff;
     text-decoration: none;
     font-size: 1em;
 }
@@ -49,13 +48,13 @@ header .busqueda {
 
 header .busqueda input {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #00ffff;
     border-radius: 5px 0 0 5px;
     width: 200px;
 }
 
 header .busqueda button {
-    background-color: #555;
+    background-color: #00ffff;
     color: #fff;
     border: none;
     padding: 5px 10px;
