@@ -3,7 +3,7 @@
 /* Tablets (768px o menos) */
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Outfit:wght@100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@media (max-width: 768px) {
+@media (max-width: 1013px) {
   header {
     flex-direction: column;
     align-items: flex-start;
@@ -30,23 +30,24 @@
     gap: 15px;
   }
 }
+
 /* Móviles (480px o menos) */
-@media (max-width: 480px) {
+@media (max-width: 415px) {
   header {
     align-items: center;
   }
   header .logo img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   header nav ul {
     align-items: center;
   }
   .hero h1 {
-    font-size: 1.8em;
+    font-size: 0.2em;
   }
   .hero p {
-    font-size: 0.9em;
+    font-size: 2px;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -58,6 +59,7 @@
     font-size: 0.9em;
   }
 }
+
 /* TARJETAS */
 main {
   padding: 20px;
@@ -362,7 +364,7 @@ header .busqueda button:hover {
   background-color: #777;
 }
 
-.hero {
+.main .hero .hero-section {
   background: url("../img/cyberpunk-2077-formulario.jpg") center/cover no-repeat; /* Ruta a tu imagen */
   height: 600px;
   text-align: center;
@@ -438,6 +440,14 @@ h2 {
   background-color: rgb(239, 238, 238);
 }
 
+.productos-grid .producto .precio {
+  color: #000000;
+}
+
+.productos .productos-grid .producto h2 {
+  color: #000000;
+}
+
 /*OFERTAS*/
 
 .ofertas {
@@ -456,6 +466,10 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Bruno Ace SC", sans-serif;
+}
+
+.juegos .juegos-grid .juego h2 {
+  color: #000000;
 }
 
 .juegos p {
@@ -522,14 +536,29 @@ h1 {
 }
 
 /* CONTACTO */
-main {
+.ubicacion-mapa {
   padding: 0px;
+  background: url("../img/cyberpunk-2077-formulario.jpg") center/cover no-repeat; /* Ruta a tu imagen */
 }
 
 h1, h2 {
   text-align: center;
   margin-bottom: 20px;
   font-family: "Bruno Ace SC", sans-serif;
+  color: #00ffff;
+}
+
+p {
+  color: #00ffff;
+}
+
+main .ubicacion h2 {
+  color: #00ffff;
+  background-color: #ffffff00;
+}
+
+main .ubicacion p {
+  color: #00ffff;
 }
 
 .contacto p, .ubicacion p {
@@ -735,6 +764,10 @@ h1 {
 .tarjeta:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas .tarjetas-grid .tarjeta h2 {
+  color: #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
