@@ -127,7 +127,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.productos-grid, .ofertas-grid {
+.productos-incio, .ofertas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
